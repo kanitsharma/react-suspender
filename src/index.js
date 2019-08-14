@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-const Suspender = React.lazy(() => new Promise(resolve => {}))
+const Suspend = React.lazy(() => new Promise(resolve => {}))
 
-export default class ExampleComponent extends Component {
+export default class Suspender extends Component {
   static propTypes = {
     suspend: PropTypes.bool,
     children: PropTypes.node
@@ -14,6 +14,6 @@ export default class ExampleComponent extends Component {
       suspend, children
     } = this.props
 
-    return suspend ? <Suspender /> : children
+    return suspend ? <Suspend /> : children
   }
 }
