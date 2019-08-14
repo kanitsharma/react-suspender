@@ -1,19 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 const Suspend = React.lazy(() => new Promise(resolve => {}))
 
-export default class Suspender extends Component {
-  static propTypes = {
-    suspend: PropTypes.bool,
-    children: PropTypes.node
-  }
+function Suspender({ suspend, children }) {
+  return suspend ? <Suspend /> : children
+}
 
-  render() {
-    const {
-      suspend, children
-    } = this.props
+Suspender.defaultProps = {
+  suspend: true
+}
 
-    return suspend ? <Suspend /> : children
-  }
+Suspender.propTypes = {
+  suspend: PropTypes.bool,
+  children: PropTypes.node
 }
