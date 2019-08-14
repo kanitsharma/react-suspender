@@ -15,3 +15,5 @@ Suspender.propTypes = {
   suspend: PropTypes.bool,
   children: PropTypes.node
 }
+
+export default Suspender
