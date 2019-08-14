@@ -1,22 +1,19 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './styles.css'
+const Suspender = React.lazy(() => new Promise(resolve => {}))
 
 export default class ExampleComponent extends Component {
   static propTypes = {
-    text: PropTypes.string
+    suspend: PropTypes.bool,
+    children: PropTypes.node
   }
 
   render() {
     const {
-      text
+      suspend, children
     } = this.props
 
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
+    return suspend ? <Suspender /> : children
   }
 }
