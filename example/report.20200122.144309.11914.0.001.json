@@ -1,0 +1,421 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200122.144309.11914.0.001.json",
+    "dumpEventTime": "2020-01-22T14:43:09Z",
+    "dumpEventTimeStamp": "1579684389744",
+    "processId": 11914,
+    "cwd": "/home/kanitsharma/open-source/react-suspender/example",
+    "commandLine": [
+      "/home/kanitsharma/n/bin/node",
+      "/home/kanitsharma/open-source/react-suspender/example/node_modules/react-scripts/scripts/start.js"
+    ],
+    "nodejsVersion": "v13.7.0",
+    "glibcVersionRuntime": "2.30",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "13.7.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.4.13-3-MANJARO",
+    "osVersion": "#1 SMP PREEMPT Mon Jan 20 18:17:25 UTC 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 3059,
+        "user": 3740400,
+        "nice": 1000,
+        "sys": 982800,
+        "idle": 17566500,
+        "irq": 62100
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 3014,
+        "user": 3793900,
+        "nice": 1800,
+        "sys": 1004600,
+        "idle": 17573300,
+        "irq": 123400
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 2836,
+        "user": 3644400,
+        "nice": 1700,
+        "sys": 1036400,
+        "idle": 17508800,
+        "irq": 69500
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 3022,
+        "user": 3703800,
+        "nice": 2100,
+        "sys": 1036600,
+        "idle": 17490200,
+        "irq": 108800
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlo1",
+        "internal": false,
+        "mac": "30:e3:7a:0d:98:b9",
+        "address": "192.168.1.4",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlo1",
+        "internal": false,
+        "mac": "30:e3:7a:0d:98:b9",
+        "address": "fe80::9006:ac05:8f44:13d9",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "kimera"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000bd0365",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x0000000000a9f86c",
+      "symbol": "node::OnFatalError(char const*, char const*) [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x0000000000c0758e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x0000000000c07909",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x0000000000db5e15",
+      "symbol": " [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x0000000000db64a6",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x0000000000dc4d19",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x0000000000dc5b55",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x0000000000dc862c",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d8f204",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x00000000010dc52e",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/home/kanitsharma/n/bin/node]"
+    },
+    {
+      "pc": "0x000000000145cc79",
+      "symbol": " [/home/kanitsharma/n/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2165268480,
+    "totalCommittedMemory": 2162173376,
+    "usedMemory": 1904848776,
+    "availableMemory": 93205632,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 31459440,
+        "capacity": 16758784,
+        "used": 2280792,
+        "available": 14477992
+      },
+      "old_space": {
+        "memorySize": 2079203328,
+        "committedMemory": 2078724736,
+        "capacity": 1881809640,
+        "used": 1852387600,
+        "available": 29422040
+      },
+      "code_space": {
+        "memorySize": 1216512,
+        "committedMemory": 1182560,
+        "capacity": 1051872,
+        "used": 1051872,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 3674112,
+        "committedMemory": 3415360,
+        "capacity": 1876240,
+        "used": 1876240,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 47308800,
+        "committedMemory": 47308800,
+        "capacity": 47216448,
+        "used": 47216448,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16758784,
+        "used": 0,
+        "available": 16758784
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 295.013,
+    "kernelCpuSeconds": 27.6173,
+    "cpuConsumptionPercent": 163.772,
+    "maxRss": 2323357696,
+    "pageFaults": {
+      "IORequired": 9,
+      "IONotRequired": 1207461
+    },
+    "fsActivity": {
+      "reads": 1880,
+      "writes": 16
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 168.781,
+    "kernelCpuSeconds": 7.43496,
+    "cpuConsumptionPercent": 89.4496,
+    "fsActivity": {
+      "reads": 1880,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "SHELL": "/usr/bin/fish",
+    "SESSION_MANAGER": "local/kimera:@/tmp/.ICE-unix/1159,unix/kimera:/tmp/.ICE-unix/1159",
+    "COLORTERM": "truecolor",
+    "XDG_MENU_PREFIX": "gnome-",
+    "npm_package_dependencies_react_scripts": "^1.1.4",
+    "NODE": "/home/kanitsharma/n/bin/node",
+    "npm_config_ignore_scripts": "",
+    "LC_ADDRESS": "en_IN",
+    "LC_NAME": "en_IN",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "MFX_HOME": "/opt/intel/mediasdk",
+    "npm_package_private": "true",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"start\"]}",
+    "npm_config_bin_links": "true",
+    "DESKTOP_SESSION": "gnome",
+    "LC_MONETARY": "en_IN",
+    "EDITOR": "/usr/bin/nano",
+    "GTK_MODULES": "appmenu-gtk-module",
+    "PWD": "/home/kanitsharma/open-source/react-suspender/example",
+    "npm_config_save_prefix": "^",
+    "XDG_SESSION_DESKTOP": "gnome",
+    "LOGNAME": "kanitsharma",
+    "QT_QPA_PLATFORMTHEME": "qt5ct",
+    "XDG_SESSION_TYPE": "x11",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_dependencies_react": "^16.4.1",
+    "npm_package_scripts_build": "react-scripts build",
+    "_": "/home/kanitsharma/open-source/react-suspender/example/node_modules/.bin/react-scripts",
+    "OMF_PATH": "/home/kanitsharma/.local/share/omf",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
+    "WINDOWPATH": "2",
+    "GDM_LANG": "en_IN",
+    "HOME": "/home/kanitsharma",
+    "USERNAME": "kanitsharma",
+    "npm_config_version_git_tag": "true",
+    "LC_PAPER": "en_IN",
+    "LANG": "en_IN",
+    "npm_package_dependencies_prop_types": "^15.6.2",
+    "npm_package_dependencies_react_suspender": "link:..",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:",
+    "XDG_CURRENT_DESKTOP": "GNOME",
+    "npm_config_init_license": "MIT",
+    "npm_package_version": "0.0.0",
+    "VTE_VERSION": "5803",
+    "N_PREFIX": "/home/kanitsharma/n",
+    "npm_config_version_commit_hooks": "true",
+    "GNOME_TERMINAL_SCREEN": "/org/gnome/Terminal/screen/db453e06_9719_46d5_a243_d8483f9d09db",
+    "INVOCATION_ID": "dede75cbf9e040d3ba85c0a4173890a3",
+    "MANAGERPID": "1072",
+    "INIT_CWD": "/home/kanitsharma/open-source/react-suspender/example",
+    "npm_lifecycle_script": "react-scripts start",
+    "npm_package_description": "- [Updating to New Releases](#updating-to-new-releases) - [Sending Feedback](#sending-feedback) - [Folder Structure](#folder-structure) - [Available Scripts](#available-scripts) - [npm start](#npm-start) - [npm test](#npm-test) - [npm run build](#npm-run-build) - [npm run eject](#npm-run-eject) - [Supported Language Features and Polyfills](#supported-language-features-and-polyfills) - [Syntax Highlighting in the Editor](#syntax-highlighting-in-the-editor) - [Displaying Lint Output in the Editor](#displaying-lint-output-in-the-editor) - [Debugging in the Editor](#debugging-in-the-editor) - [Formatting Code Automatically](#formatting-code-automatically) - [Changing the Page `<title>`](#changing-the-page-title) - [Installing a Dependency](#installing-a-dependency) - [Importing a Component](#importing-a-component) - [Code Splitting](#code-splitting) - [Adding a Stylesheet](#adding-a-stylesheet) - [Post-Processing CSS](#post-processing-css) - [Adding a CSS Preprocessor (Sass, Less etc.)](#adding-a-css-preprocessor-sass-less-etc) - [Adding Images, Fonts, and Files](#adding-images-fonts-and-files) - [Using the `public` Folder](#using-the-public-folder) - [Changing the HTML](#changing-the-html) - [Adding Assets Outside of the Module System](#adding-assets-outside-of-the-module-system) - [When to Use the `public` Folder](#when-to-use-the-public-folder) - [Using Global Variables](#using-global-variables) - [Adding Bootstrap](#adding-bootstrap) - [Using a Custom Theme](#using-a-custom-theme) - [Adding Flow](#adding-flow) - [Adding Custom Environment Variables](#adding-custom-environment-variables) - [Referencing Environment Variables in the HTML](#referencing-environment-variables-in-the-html) - [Adding Temporary Environment Variables In Your Shell](#adding-temporary-environment-variables-in-your-shell) - [Adding Development Environment Variables In `.env`](#adding-development-environment-variables-in-env) - [Can I Use Decorators?](#can-i-use-decorators) - [Integrating with an API Backend](#integrating-with-an-api-backend) - [Node](#node) - [Ruby on Rails](#ruby-on-rails) - [Proxying API Requests in Development](#proxying-api-requests-in-development) - [\"Invalid Host Header\" Errors After Configuring Proxy](#invalid-host-header-errors-after-configuring-proxy) - [Configuring the Proxy Manually](#configuring-the-proxy-manually) - [Configuring a WebSocket Proxy](#configuring-a-websocket-proxy) - [Using HTTPS in Development](#using-https-in-development) - [Generating Dynamic `<meta>` Tags on the Server](#generating-dynamic-meta-tags-on-the-server) - [Pre-Rendering into Static HTML Files](#pre-rendering-into-static-html-files) - [Injecting Data from the Server into the Page](#injecting-data-from-the-server-into-the-page) - [Running Tests](#running-tests) - [Filename Conventions](#filename-conventions) - [Command Line Interface](#command-line-interface) - [Version Control Integration](#version-control-integration) - [Writing Tests](#writing-tests) - [Testing Components](#testing-components) - [Using Third Party Assertion Libraries](#using-third-party-assertion-libraries) - [Initializing Test Environment](#initializing-test-environment) - [Focusing and Excluding Tests](#focusing-and-excluding-tests) - [Coverage Reporting](#coverage-reporting) - [Continuous Integration](#continuous-integration) - [Disabling jsdom](#disabling-jsdom) - [Snapshot Testing](#snapshot-testing) - [Editor Integration](#editor-integration) - [Developing Components in Isolation](#developing-components-in-isolation) - [Getting Started with Storybook](#getting-started-with-storybook) - [Getting Started with Styleguidist](#getting-started-with-styleguidist) - [Making a Progressive Web App](#making-a-progressive-web-app) - [Opting Out of Caching](#opting-out-of-caching) - [Offline-First Considerations](#offline-first-considerations) - [Progressive Web App Metadata](#progressive-web-app-metadata) - [Analyzing the Bundle Size](#analyzing-the-bundle-size) - [Deployment](#deployment) - [Static Server](#static-server) - [Other Solutions](#other-solutions) - [Serving Apps with Client-Side Routing](#serving-apps-with-client-side-routing) - [Building for Relative Paths](#building-for-relative-paths) - [Azure](#azure) - [Firebase](#firebase) - [GitHub Pages](#github-pages) - [Heroku](#heroku) - [Netlify](#netlify) - [Now](#now) - [S3 and CloudFront](#s3-and-cloudfront) - [Surge](#surge) - [Advanced Configuration](#advanced-configuration) - [Troubleshooting](#troubleshooting) - [`npm start` doesn’t detect changes](#npm-start-doesnt-detect-changes) - [`npm test` hangs on macOS Sierra](#npm-test-hangs-on-macos-sierra) - [`npm run build` exits too early](#npm-run-build-exits-too-early) - [`npm run build` fails on Heroku](#npm-run-build-fails-on-heroku) - [`npm run build` fails to minify](#npm-run-build-fails-to-minify) - [Moment.js locales are missing](#momentjs-locales-are-missing) - [Something Missing?](#something-missing)",
+    "GJS_DEBUG_OUTPUT": "stderr",
+    "npm_config_version_tag_prefix": "v",
+    "YARN_WRAP_OUTPUT": "false",
+    "XDG_SESSION_CLASS": "user",
+    "TERM": "xterm-256color",
+    "LC_IDENTIFICATION": "en_IN",
+    "npm_package_name": "react-suspender-example",
+    "npm_package_scripts_eject": "react-scripts eject",
+    "USER": "kanitsharma",
+    "npm_package_homepage": "https://kanitsharma.github.io/react-suspender",
+    "GNOME_TERMINAL_SERVICE": ":1.62",
+    "npm_package_dependencies_react_dom": "^16.4.1",
+    "DISPLAY": ":1",
+    "npm_lifecycle_event": "start",
+    "SHLVL": "1",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_message": "v%s",
+    "LC_TELEPHONE": "en_IN",
+    "LC_MEASUREMENT": "en_IN",
+    "UBUNTU_MENUPROXY": "1",
+    "npm_config_user_agent": "yarn/1.21.1 npm/? node/v13.7.0 linux x64",
+    "npm_execpath": "/home/kanitsharma/n/lib/node_modules/yarn/bin/yarn.js",
+    "npm_package_scripts_test": "react-scripts test --env=jsdom",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "npm_config_strict_ssl": "true",
+    "LC_TIME": "en_IN",
+    "JOURNAL_STREAM": "9:28009",
+    "XDG_DATA_DIRS": "/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "npm_package_scripts_start": "react-scripts start",
+    "PATH": "/tmp/yarn--1579684192406-0.3797941384384653:/home/kanitsharma/open-source/react-suspender/example/node_modules/.bin:/home/kanitsharma/.config/yarn/link/node_modules/.bin:/home/kanitsharma/.yarn/bin:/home/kanitsharma/n/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/kanitsharma/n/lib/node_modules/npm/bin/node-gyp-bin:/home/kanitsharma/n/bin/node_modules/npm/bin/node-gyp-bin:/home/kanitsharma/n/bin:/home/kanitsharma/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/opt/intel/mediasdk/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin",
+    "GDMSESSION": "gnome",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "npm_package_license": "MIT",
+    "MAIL": "/var/spool/mail/kanitsharma",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_ignore_optional": "",
+    "OMF_CONFIG": "/home/kanitsharma/.config/omf",
+    "npm_node_execpath": "/home/kanitsharma/n/bin/node",
+    "LC_NUMERIC": "en_IN",
+    "npm_config_init_version": "1.0.0",
+    "BABEL_ENV": "development",
+    "NODE_ENV": "development",
+    "NODE_PATH": ""
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 524288,
+      "hard": 524288
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 31329,
+      "hard": 31329
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/usr/lib/libdl.so.2",
+    "/usr/lib/libstdc++.so.6",
+    "/usr/lib/libm.so.6",
+    "/usr/lib/libgcc_s.so.1",
+    "/usr/lib/libpthread.so.0",
+    "/usr/lib/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/usr/lib/libnss_files.so.2"
+  ]
+}

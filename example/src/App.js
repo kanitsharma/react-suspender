@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component, Suspense } from 'react'
 
-import ExampleComponent from 'react-suspender'
+import Suspend from 'react-suspender'
 
 export default class App extends Component {
   render () {
     return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
+      <Suspense fallback={<div>Suspended</div>}>
+        <Suspend>
+          I am suspended.
+        </Suspend>
+      </Suspense>
     )
   }
 }

@@ -32,10 +32,6 @@ class SuspendExample extends Component {
 }
 ```
 
-## Props
-
-- suspend : bool
-
 ## License
 
 MIT © [kanitsharma](https://github.com/kanitsharma)
