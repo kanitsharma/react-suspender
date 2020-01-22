@@ -1,6 +1,6 @@
 # react-suspender
 
-React component that forcefully suspends the the component tree.
+React component that forcefully suspends the component tree.
 
 > 
 
