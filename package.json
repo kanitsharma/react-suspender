@@ -1,6 +1,6 @@
 {
   "name": "react-suspender",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React component that forcefully suspends the component tree.",
   "author": "kanitsharma",
   "license": "MIT",
